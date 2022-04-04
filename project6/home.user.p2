@@ -1,0 +1,17 @@
+# Last Modified: Sun Apr  3 22:14:29 2022
+#include <tunables/global>
+
+/home/oloveluck/cy2550/project6/p2 {
+  #include <abstractions/base>
+  #include <abstractions/nameservice>
+  #include <abstractions/user-tmp>
+
+  /etc/hostid r,
+  /etc/timezone r,
+  /proc/uptime r,
+  /var/log/syslog r,
+  owner /home/*/.project2/config w,
+  owner /home/*/cy2550/project6/template r,
+  owner /home/oloveluck/p2 mr,
+
+}
